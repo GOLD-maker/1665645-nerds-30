@@ -10,6 +10,7 @@
   --basic-extra-grey: #666666;
   --basic-white: #ffffff;
   --basic-extra-white: #444444;
+  --basic-silver: #C1C1C1;
 
   --basic-corral: #FB565A;
   --basic-extra-corral: #E74246;
@@ -82,12 +83,14 @@ img {
 }
 
 .site-navigation a:hover,
-.user-navigation a:hover {
+.user-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:focus {
   color: var(--basic-corral);
 }
 
-.site-navigation a:focus,
-.user-navigation a:focus {
+.site-navigation a:active,
+.user-navigation a:active {
   color: var(--basic-black);
   opacity: 30%;
 }
@@ -119,12 +122,6 @@ img {
   color: var(--basic-extra-black);
 }
 
-.slider-item a {
-  font-weight: 500;
-  line-height: 18px;
-  color: var(--basic-white);
-}
-
 .slider-list {
   list-style: none;
 }
@@ -140,7 +137,7 @@ img {
 }
 
 .slider-button:disabled {
-  background-color: #C1C1C1;
+  background-color: var(--basic-silver);
 }
 
 
@@ -160,11 +157,12 @@ img {
   border-radius: 3px;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: var(--basic-extra-corral);
 }
 
-.button:focus {
+.button:active {
   background-color: var(--basic-dark-corral);
 }
 
@@ -172,11 +170,12 @@ img {
   background-color: var(--basic-green);
 }
 
-.button-apps:hover {
+.button-apps:hover,
+.button-apps:focus {
   background-color: var(--basic-extra-green);
 }
 
-.button-apps:focus {
+.button-apps:active {
   background-color: var(--basic-dark-green);
 }
 
@@ -184,11 +183,12 @@ img {
   background-color: var(--basic-yellow);
 }
 
-.button-presentations:hover {
+.button-presentations:hover,
+.button-presentations:focus {
   background-color: var(--basic-extra-yellow);
 }
 
-.button-presentations:focus {
+.button-presentations:active {
   background-color: var(--basic-dark-yellow);
 }
 
@@ -207,6 +207,7 @@ img {
 .feature-item h3 {
   font-size: 24px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 
@@ -235,8 +236,7 @@ img {
 }
 
 .company-list {
-  list-style-type: "—";
-  color: var(--basic-corral);
+  color: var(--basic-extra-black);
 }
 
 .company-item span {
@@ -273,11 +273,12 @@ img {
   opacity: 0.2;
 }
 
-.partners-item a:hover {
+.partners-item a:hover,
+.partners-item a:focus {
   opacity: 1;
 }
 
-.partners-item a:focus {
+.partners-item a:active {
   opacity: 0.1;
 }
 
@@ -293,6 +294,7 @@ img {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .footer-contacts p {
