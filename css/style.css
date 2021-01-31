@@ -8,9 +8,12 @@
   --basic-extra-light: #E1E1E1;
   --basic-grey: #4D4D4D;
   --basic-extra-grey: #666666;
+  --basic-light-grey: #DFDFDF;
+  --basic-dark-grey: #D5D5D5;
   --basic-white: #ffffff;
   --basic-extra-white: #444444;
   --basic-silver: #C1C1C1;
+  --basic-border-grey: #DBDBDB;
 
   --basic-corral: #FB565A;
   --basic-extra-corral: #E74246;
@@ -22,6 +25,8 @@
   --basic-yellow: #EFC849;
   --basic-extra-yellow: #EAB534;
   --basic-dark-yellow: #E5A722;
+  --basic-arrow: #A6A6A6;
+  --basic-active-arrow: #231F20;
 }
 
 
@@ -59,8 +64,8 @@ img {
   text-transform: uppercase;
 }
 
-.main-header-logo:focus {
-  color: var(--basic-black);
+.main-header-logo:active {
+  color: var(--basic-arrow);
   opacity: 30%;
 }
 
@@ -191,6 +196,25 @@ img {
 .button-presentations:active {
   background-color: var(--basic-dark-yellow);
 }
+
+.filter-button {
+  color: var(--basic-black);
+  background-color: var(--basic-ligth);
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--basic-light-grey);
+}
+
+.filter-button:active {
+  background-color: var(--basic-dark-grey);
+}
+
+.filter-button label:active {
+  opacity: 0.3;
+}
+
 
 
 /* Features */
@@ -347,4 +371,164 @@ img {
 
 .social-button img:active {
   opacity: 0.3;
+}
+
+
+/* Container */
+
+
+.page-title {
+  background-color: var(--basic-ligth);
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+
+/* Filters */
+
+
+.filter legend {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.filter-option {
+  list-style: none;
+}
+
+.filter-number input {
+  font-size: 16px;
+  line-height: 22px;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  margin: 0;
+  text-align: center;
+  background-color: var(--basic-ligth);
+  border: none;
+}
+
+.filter-number label {
+  line-height: 22px;
+  color: var(--basic-extra-black);
+  text-transform: uppercase;
+}
+
+.filter-radio,
+.filter-checkbox {
+  line-height: 19px;
+  color: var(--basic-extra-black);
+}
+
+
+/* Catalog */
+
+
+.catalog-subtitle {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.catalog-price {
+  list-style: none;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.catalog-button-price a {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.catalog-button-price a:hover,
+.catalog-button-price a:focus {
+  opacity: 0.6;
+}
+
+.current-price,
+.catalog-button-price a:active {
+  opacity: 1;
+}
+
+.current-arrow-price {
+  fill: var(--basic-active-arrow);
+  opacity: 1;
+}
+
+.catalog-arrow-price {
+  fill: var(--basic-arrow);
+  opacity: 0.2;
+}
+
+.catalog-arrow-price:hover,
+.catalog-arrow-price:focus {
+  fill: var(--basic-arrow);
+  opacity: 1;
+}
+
+.catalog-arrow-price:active {
+  fill: var(--basic-active-arrow);
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item h3 {
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.catalog-item h3:hover,
+.catalog-item h3:focus {
+  color: var(--basic-corral);
+}
+
+.catalog-item h3:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.catalog-item-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+
+/* Pagination */
+
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-black);
+  background-color: var(--basic-ligth);
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  background-color: var(--basic-light-grey);
+}
+
+.pagination-item a:active {
+  background-color: var(--basic-dark-grey);
+}
+
+.pagination-item-current a {
+  border: 3px solid var(--basic-border-grey);
+  color: var(--basic-black);
+  background-color: var(--basic-white);
 }
