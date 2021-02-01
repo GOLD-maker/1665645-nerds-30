@@ -73,9 +73,8 @@ img {
   list-style: none;
 }
 
-.site-navigation-current {
-  text-decoration: underline;
-  text-decoration-color: var(--basic-corral);
+.site-navigation-current a {
+  border-bottom: 2px solid var(--basic-corral);
 }
 
 
@@ -210,11 +209,6 @@ img {
 .filter-button:active {
   background-color: var(--basic-dark-grey);
 }
-
-.filter-button label:active {
-  opacity: 0.3;
-}
-
 
 
 /* Features */
@@ -527,7 +521,10 @@ img {
   background-color: var(--basic-dark-grey);
 }
 
-.pagination-item-current a {
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
   border: 3px solid var(--basic-border-grey);
   color: var(--basic-black);
   background-color: var(--basic-white);
