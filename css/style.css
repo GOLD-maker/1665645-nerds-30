@@ -498,10 +498,21 @@ img {
 
 
 .page-title {
-  background-color: var(--basic-ligth);
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+  text-align: center;
+}
+
+.page-catalog {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  margin-top: 55px;
+}
+
+.page-title-background {
+  background-color: var(--basic-ligth);
+  padding: 80px;
 }
 
 
@@ -545,6 +556,10 @@ img {
 
 /* Catalog */
 
+
+.catalog {
+  margin-left: 140px;
+}
 
 .catalog-subtitle {
   font-weight: bold;
