@@ -87,7 +87,7 @@ img {
 .container {
   width: 1157px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 10px;
 }
 
 
@@ -612,6 +612,19 @@ img {
 
 .catalog-list {
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+}
+
+.catalog-item {
+  margin-right: 40px;
+  margin-bottom: 30px;
+}
+
+.catalog-item-image {
+  width: 358px;
+  height: 578px;
 }
 
 .catalog-item h3 {
