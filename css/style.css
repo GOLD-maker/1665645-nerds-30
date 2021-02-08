@@ -111,8 +111,10 @@ img {
 }
 
 .main-navigation-wrapper {
-  display: grid;
-  grid-template-columns: 160px 1fr min-content;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
   width: 1157px;
   margin: 0 auto;
   padding: 0 10px;
@@ -140,6 +142,21 @@ img {
 /* User navigation */
 
 
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.site-navigation-item {
+  margin-right: 45px;
+}
+
+.site-navigation-item:last-child {
+  margin-right: 0;
+}
+
 .site-navigation a,
 .user-navigation a {
   color: var(--basic-black);
@@ -159,6 +176,14 @@ img {
 }
 
 
+/* Basket link */
+
+
+.user-navigation .basket-link {
+  padding-left: 50px;
+}
+
+
 /* Slider */
 
 
@@ -171,20 +196,21 @@ img {
 }
 
 .slider-item {
-  display: grid;
-  grid-template-columns: 1fr 1fr; 
+  display: flex;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
 }
 
 .slider-title {
+  max-width: 400px;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
 }
 
 .slider-desc {
+  max-width: 400px;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
@@ -209,6 +235,11 @@ img {
 
 .slider-button:disabled {
   background-color: var(--basic-silver);
+}
+
+.slider-image {
+  width: 760px;
+  height: 431px;
 }
 
 
@@ -289,12 +320,21 @@ img {
 }
 
 .features-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 100px;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.feature-item {
+  width: 300px;
+  margin-bottom: 20px;
+  margin-right: 120px;
+}
+
+.feature-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .feature-item p {
@@ -307,13 +347,18 @@ img {
   text-transform: uppercase;
 }
 
+.feature-item img {
+  width: 300px;
+  height: 146px;
+}
+
 
 /* Company */
 
 
 .company {
-  display: grid;
-  grid-template-columns: 1fr 360px;
+  display: flex;
+  justify-content: space-between;
   margin-top: 155px;
   margin-top: 80px;
   margin-bottom: 80px;
@@ -366,6 +411,14 @@ img {
   color: var(--basic-extra-black);
 }
 
+.company-about {
+  max-width: 650px;
+}
+
+.company-advantages {
+  max-width: 360px;
+}
+
 
 /* Partners */
 
@@ -376,12 +429,18 @@ img {
 }
 
 .partners-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 95px;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+.partners-item {
+  margin-right: 100px;
+}
+
+.partners-item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .partners-item a{
