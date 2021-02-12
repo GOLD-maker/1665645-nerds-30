@@ -21,14 +21,22 @@
     		    <a class="main-header-logo" href="index.html">
     		      <img class="svg-logo" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип интернет магазина «Nerds»">
     		    </a>
-    	  		<ul class="site-navigation">
-    	  			<li><a href="#">Студия</a></li>
-    	  			<li><a href="#">Клиенты</a></li>
-    	  			<li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
-    	  			<li><a href="#">Контакты</a></li>
-    	  		</ul>
+            <ul class="site-navigation">
+              <li class="site-navigation-item">
+                <a href="#">Студия</a>
+              </li>
+              <li class="site-navigation-item">
+                <a href="#">Клиенты</a>
+              </li>
+              <li class="site-navigation-item site-navigation-current">
+                <a href="catalog.html">Магазин</a>
+              </li>
+              <li class="site-navigation-item">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
             <div class="user-navigation">
-             <a href="#">Корзина</a>
+             <a class="basket-link" href="#">Корзина</a>
             </div>
           </div>
         </div>
@@ -46,14 +54,12 @@
             <fieldset>
               <legend>Стоимость:</legend>
               <ul>
-                <li class="filter-option filter-range">
+                <li class="filter-range">
                   <input type="range" min="0" max="15000" step="1" value="10000" id="slider" name="slider-price">
                 </li>
-                <li class="filter-option filter-number">
+                <li class="filter-number">
                   <label for="from-price">От</label>
                   <input type="number" min="0" max="15000" step="1" value="0" id="from-price">
-                </li>
-                <li class="filter-option filter-number">
                   <label for="to-price">До</label>
                   <input type="number" min="0" max="15000" step="1" value="15000" id="to-price">
                 </li>
@@ -62,15 +68,15 @@
             <fieldset>
               <legend>Сетка:</legend>
               <ul>
-                <li class="filter-option filter-radio">
+                <li class="filter-radio">
                   <input type="radio" name="grid-group" value="adaptive" id="filter-adaptive" checked>
                   <label for="filter-adaptive">Адаптивная</label>
                 </li>
-                <li class="filter-option filter-radio">
+                <li class="filter-radio">
                   <input type="radio" name="grid-group" value="fixed" id="filter-fixed">
                   <label for="filter-fixed">Фиксированная</label>
                 </li>
-                <li class="filter-option filter-radio">
+                <li class="filter-radio">
                   <input type="radio" name="grid-group" value="rubber" id="filter-rubber">
                   <label for="filter-rubber">Резиновая</label>
                 </li>
@@ -107,32 +113,34 @@
 
         <section class="catalog">
           <h2 class="visually-hidden">Список макетов</h2>
-          <p class="catalog-subtitle">Сортировать:</p>
-          <ul class="catalog-price">
-            <li class="current-price">
-              <a>По цене</a>
-            </li>
-            <li class="catalog-button-price">
-              <a href="#">По типу</a>
-            </li>
-            <li class="catalog-button-price">
-              <a href="#">По названию</a>
-            </li>
-            <li>
-              <a class="current-arrow-price">
-                <svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.5 10L0 0H11"/>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="catalog-arrow-price" href="#">
-                <svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.5 0L0 10H11L5.5 0Z"/>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <div class="catalog-sort">
+            <p class="catalog-subtitle">Сортировать:</p>
+            <ul class="catalog-price">
+              <li class="current-price">
+                <a>По цене</a>
+              </li>
+              <li class="catalog-button-price">
+                <a href="#">По типу</a>
+              </li>
+              <li class="catalog-button-price">
+                <a href="#">По названию</a>
+              </li>
+              <li>
+                <a class="current-arrow-price">
+                  <svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.5 10L0 0H11"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="catalog-arrow-price" href="#">
+                  <svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.5 0L0 10H11L5.5 0Z"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
 
           <ul class="catalog-list">
             <li class="catalog-item">
@@ -236,19 +244,16 @@
           <ul class="social-list">
             <li>
               <a class="social-button" href="#">
-                <span>Вконтакте</span>
                 <img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
               </a>
             </li>
             <li>
               <a class="social-button" href="#">
-                <span>Фейсбук</span>
                 <img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук">
               </a>
             </li>
             <li>
               <a class="social-button" href="#">
-                <span>Инстаграм</span>
                 <img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм">
               </a>
             </li>
