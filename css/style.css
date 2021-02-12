@@ -594,9 +594,10 @@ img {
 }
 
 .page-catalog {
-  display: grid;
-  grid-template-columns: 260px 1fr;
+  display: flex;
+  justify-content: space-between;
   margin-top: 55px;
+  margin-bottom: 60px;
 }
 
 .page-title-background {
@@ -608,18 +609,33 @@ img {
 /* Filters */
 
 
+.filter {
+  width: 260px;
+}
+
 .filter legend {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
-.filter-option {
+.filter ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-number {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .filter-number input {
+  width: 80px;
+  height: 38px;
   font-size: 16px;
   line-height: 22px;
   -webkit-appearance: none;
@@ -642,26 +658,61 @@ img {
   color: var(--basic-extra-black);
 }
 
+.filter fieldset:first-child legend {
+  margin-bottom: 48px;
+}
+
+.filter fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+  margin-bottom: 50px;
+}
+
+.filter-range {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
 
 /* Catalog */
 
 
 .catalog {
-  margin-left: 140px;
+  width: 758px;
 }
 
 .catalog-subtitle {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+  margin: 0;
+  padding: 0;
   text-transform: uppercase;
 }
 
 .catalog-price {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   list-style: none;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.catalog-price li {
+  margin-right: 15px;
+}
+
+.catalog-price li:nth-child(3n) {
+  margin-right: 47px;
+}
+
+.catalog-price li:last-child {
+  margin-right: 0px;
 }
 
 .catalog-button-price a {
@@ -701,14 +752,19 @@ img {
 
 .catalog-list {
   list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 0;
 }
 
 .catalog-item {
-  margin-right: 40px;
-  margin-bottom: 30px;
+  margin-right: 42px;
+  margin-bottom: 32px;
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
 }
 
 .catalog-item-image {
@@ -739,12 +795,30 @@ img {
   line-height: 18px;
 }
 
+.catalog-sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 /* Pagination */
 
 
 .pagination-list {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pagination-item {
+  margin-right: 11px;
+}
+
+.pagination-item:last-child {
+  margin-right: 0;
 }
 
 .pagination-item a {
