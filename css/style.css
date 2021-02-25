@@ -344,9 +344,10 @@ img {
 }
 
 .slider-list-button {
+  display: flex;
   position: absolute;
   width: 88px;
-  bottom: 74px;
+  bottom: 80px;
   left: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -364,6 +365,7 @@ img {
 }
 
 .slider-button button {
+  display: flex;
   position: relative;
   width: 18px;
   height: 18px;
