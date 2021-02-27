@@ -365,6 +365,8 @@ img {
 }
 
 .slider-button button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   width: 18px;
@@ -1314,7 +1316,6 @@ img {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  margin-top: 25px;
 }
 
 .catalog-item h3:hover,
@@ -1336,11 +1337,15 @@ img {
 .catalog-item-info {
   display: none;
   position: absolute;
-  top: 60%;
+  bottom: 0;
   width: 356px;
   min-height: 231px;
   text-align: center;
   background-color: var(--basic-ligth);
+  vertical-align: bottom;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 26px 52px 44px 52px;
 }
 
 .catalog-item:hover .catalog-item-info,
