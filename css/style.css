@@ -338,7 +338,7 @@ img {
 
 .slider-list li {
   width: 1157px;
-  height: 431px;
+  min-height: 431px;
   margin: 0;
   padding: 0;
 }
