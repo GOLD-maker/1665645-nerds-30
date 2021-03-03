@@ -1491,6 +1491,7 @@ img {
   bottom: 0;
   margin: auto;
   background-color: var(--basic-white);
+  z-index: 3;
 }
 
 /* Modal feedback */
