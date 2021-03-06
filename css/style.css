@@ -76,7 +76,7 @@ body {
   min-width: 1157px;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: var(--basic-black);
@@ -137,7 +137,6 @@ img {
 .main-navigation {
   display: -ms-grid;
   display: grid;
-  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
