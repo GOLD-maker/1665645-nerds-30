@@ -3,7 +3,8 @@ var myMap;
 var myPlacemark;
 function init () {
     myMap = new ymaps.Map('map', {
-        center: [59.939, 30.32316627976146],
+        //center: [59.939, 30.32316627976146],
+        center: [59.93905, 30.3215],
         zoom: 17
     });
 
