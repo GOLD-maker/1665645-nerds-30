@@ -165,7 +165,7 @@ img {
 
 .main-header-bar {
   background-color: var(--basic-ligth);
-  margin-top: 50px;
+  margin-top: 48px;
 }
 
 .main-header-logo:active {
@@ -346,8 +346,9 @@ img {
   display: flex;
   position: absolute;
   width: 88px;
-  bottom: 80px;
+  bottom: 88px;
   left: 50%;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -688,7 +689,7 @@ img {
 
 
 .partners {
-  margin-top: 126px;
+  margin-top: 123px;
 }
 
 .partners-list {
@@ -711,23 +712,46 @@ img {
 
 .partners-item {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .partners-item:not(:first-child):before {
   position: absolute;
   content: "";
   width: 2px;
-  height: 55px;
-  top: 40%;
-  left: -62px;
+  height: 52px;
+  top: 50%;
+  left: -60px;
   background-color: var(--basic-ligth);
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 
+.partners-item:first-child a {
+  margin-top: 12px;
+}
+
+.partners-item:nth-child(2n) {
+  margin-right: 9px;
+}
+
+.partners-item:nth-child(3n) {
+  margin-right: 26px;
+}
+
 .partners-item:nth-child(4n) {
   margin-right: 0;
+}
+
+.partners-item:nth-child(4n) a {
+  margin-top: 7px;
 }
 
 .partners-item:nth-child(5n):before {
@@ -757,7 +781,7 @@ img {
 
 
 .main-footer {
-  margin-top: 97px;
+  margin-top: 107px;
   color: var(--basic-black);
 }
 
@@ -836,7 +860,7 @@ img {
   line-height: 36px;
   margin: 0;
   padding: 0;
-  margin-top: 37px;
+  margin-bottom: 10px;
 }
 
 .footer-desc {
@@ -853,9 +877,9 @@ img {
   display: flex;
   margin-top: 50px;
   margin-bottom: 50px;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 
@@ -940,7 +964,7 @@ img {
 
 .page-title-background {
   background-color: var(--basic-ligth);
-  padding: 69px;
+  padding: 69px 0;
 }
 
 
@@ -1464,7 +1488,7 @@ img {
   width: 1158px;
   height: 2px;
   left: 10px;
-  bottom: 149px;
+  bottom: 139px;
   background-color: var(--basic-ligth);
 }
 
@@ -1474,7 +1498,7 @@ img {
   width: 1158px;
   height: 2px;
   left: 10px;
-  bottom: -33px;
+  bottom: -43px;
   background-color: var(--basic-ligth);
 }
 
