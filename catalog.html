@@ -7,7 +7,7 @@
     <link rel="icon" href="img/icons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/icons/180.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
 
@@ -51,7 +51,7 @@
           <h2 class="visually-hidden">Фильтр товаров</h2>
           <form class="filter" method="get" action="https://echo.htmlacademy.ru" target="_blank">
             <fieldset>
-              <legend>Стоимость:</legend>
+              <legend class="fieldset-title price-title">Стоимость:</legend>
               <div class="filter-range">
                 <div class="range-controls">
                   <div class="scale">
@@ -69,7 +69,7 @@
               </div>
             </fieldset>
             <fieldset>
-              <legend>Сетка:</legend>
+              <legend class="fieldset-title">Сетка:</legend>
               <ul>
                 <li class="filter-option filter-radio">
                   <input class="visually-hidden filter-input-radio" type="radio" name="grid-group" value="adaptive" id="filter-adaptive" checked>
@@ -86,7 +86,7 @@
               </ul>
             </fieldset>
             <fieldset>
-              <legend>Особенности:</legend>
+              <legend class="fieldset-title">Особенности:</legend>
               <ul>
                 <li class="filter-option filter-checkbox">
                   <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="slider" id="filter-slider" checked>

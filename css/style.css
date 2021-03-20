@@ -638,12 +638,6 @@ img {
   line-height: 65px;
 }
 
-.company-table th span {
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 40px;
-}
-
 .company-table td {
   font-weight: normal;
   font-size: 16px;
@@ -934,7 +928,7 @@ img {
           box-shadow: inset 0px 3px 0px var(--basic-extra-black-transparent);
 }
 
-.social-button:active img{
+.social-button:active img {
   opacity: 0.3;
 }
 
@@ -975,12 +969,16 @@ img {
   width: 260px;
 }
 
-.filter legend {
+.fieldset-title {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
   margin-bottom: 15px;
+}
+
+.price-title {
+  margin-bottom: 48px;
 }
 
 .filter ul {
@@ -1124,10 +1122,6 @@ img {
 
 .filter-input-radio:disabled + label {
   opacity: 0.3;
-}
-
-.filter fieldset:first-child legend {
-  margin-bottom: 48px;
 }
 
 .filter fieldset {
